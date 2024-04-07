@@ -1,0 +1,530 @@
+
+<!-- https://getbootstrap.com/docs/5.3/getting-started/introduction/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="./style.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <!-- fixed-top -->
+    <div class="container">
+      <a class="navbar-brand" href=""id="logo"><span id="traveltext">T</span>ravel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <!-- navbar-toggler sets property for hamburger menu -->
+        <span><i class="fa-solid fa-bars"></i></span>
+                    <!-- fa solid is to make text bold 
+            fa bars is used to make ham lines in mobile view-->
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+            <!-- me stands for margin at end/right -->
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#book">Book</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#packages">Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item"style="padding-bottom:10px">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search">
+          <button class="btn btn-primary" id="nav-button"type="button">Search</button>
+        </form>
+      </div>
+    </div>
+</nav>
+  
+
+<!-- navbar ended -->
+
+
+
+<!-- home section -->
+<div class="home">
+    <div class="content">
+        <h5>Welcome To World</h5>
+        <h1>visit <span class="change-content"></span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, culpa.</p>
+        <a href="#book">Book Place</a>
+    </div>
+</div>
+<!-- home section end -->
+
+
+<!-- book start -->
+
+
+<section class="book" id="book">
+    <div class="container">
+        <div class="main-text">
+            <h1><span>B</span>ook</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 py-3 py-md-0">
+                <div class="card">
+                    <img src="book-img.png" alt="booking pic">
+                </div>
+            </div>
+            <div class="col-md-6 py-3 py-md-0">
+                <form action="#">
+                    <input type="text"class="form-control"placeholder="Where to" required><br><br>
+                    <input type="number"class="form-control"placeholder="How Many" required><br><br>
+                    <h3 style="font-size: 20px;font-weight: 600;color:#ffa500;margin-top: 0px;">Arrivals</h3>
+                    <input type="date"class="form-control"placeholder="Arrivals" required><br><br>
+                    <h3 style="font-size: 20px;font-weight: 600;color:#ffa500;margin-top: 0px;">Leaving</h3>
+                    <input type="date"class="form-control"placeholder="Leaving" required><br><br>
+                    <textarea class="form-control" name="text" cols="30" rows="5"placeholder="Enter your name and details"></textarea>
+                    <input type="submit" value="Book Now" class="submit"required>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- packages start -->
+
+<section class="packages" id="packages">
+    <div class="container">
+        <div class="main-text">
+            <h1><span>P</span>ackages</h1>
+        </div>
+
+        <div class="row"style="margin-top:30px;">
+
+            <!-- 1st column -->
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="uk.png" alt="">
+                        <div class="card-body">
+                            <h3>United Kingdom</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, fuga?</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h6>Price:<strong>$500</strong></h6>
+                            <a href="#book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            <!-- 2nd column -->
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="france.png" alt="">
+                        <div class="card-body">
+                            <h3>France</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, fuga?</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h6>Price:<strong>$600</strong></h6>
+                            <a href="#book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            <!-- 3rd column -->
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="pakistan.png" alt="">
+                        <div class="card-body">
+                            <h3>Pakistan</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, fuga?</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h6>Price:<strong>$200</strong></h6>
+                            <a href="#book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+        <!-- 2nd row ///////////////////////////////////////////////////////////////////////////////////-->
+
+        <div class="row"style="margin-top:30px;">
+
+            <!-- 1st column -->
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="italy.png" alt="">
+                        <div class="card-body">
+                            <h3>Italy</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, fuga?</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h6>Price:<strong>$500</strong></h6>
+                            <a href="#book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            <!-- 2nd column -->
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="india.png" alt="">
+                        <div class="card-body">
+                            <h3>India</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, fuga?</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h6>Price:<strong>$600</strong></h6>
+                            <a href="#book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            <!-- 3rd column -->
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="us.png" alt="">
+                        <div class="card-body">
+                            <h3>United States</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, fuga?</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h6>Price:<strong>$200</strong></h6>
+                            <a href="#book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!-- end of 2nd row -->
+
+
+
+    </div>
+</section>
+
+<!-- packages end -->
+
+
+
+
+
+
+<!-- section services -->
+<section class="services" id="services">
+    <div class="container">
+
+        <div class="main-text" style="margin-top: 30px;">
+            <h1><span>S</span>ervices</h1>
+        </div>
+
+
+        <!-- 1st row -->
+        <div class="row"style="margin-top:30px">
+            <!-- 1st column -->
+            <div class="col-md-4 py py-md-0">
+                <div class="card">
+                    <i class="fas fa-hotel"></i>
+                    <div class="card-body">
+                        <h3>Affordable Hotel</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laudantium, aperiam officia corporis tempore debitis!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd column -->
+            <div class="col-md-4 py py-md-0">
+                <div class="card">
+                    <i class="fas fa-utensils"></i>
+                    <div class="card-body">
+                        <h3>Food & Drinks</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laudantium, aperiam officia corporis tempore debitis!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 3rd column -->
+            <div class="col-md-4 py py-md-0">
+                <div class="card">
+                    <i class="fas fa-bullhorn"></i>
+                    <div class="card-body">
+                        <h3>Safety Guide</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laudantium, aperiam officia corporis tempore debitis!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- 2nd row -->
+        <div class="row"style="margin-top:30px">
+            <!-- 1st column -->
+            <div class="col-md-4 py py-md-0">
+                <div class="card">
+                    <i class="fas fa-globe-asia"></i>
+                    <div class="card-body">
+                        <h3>Around The World</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laudantium, aperiam officia corporis tempore debitis!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd column -->
+            <div class="col-md-4 py py-md-0">
+                <div class="card">
+                    <i class="fas fa-plane"></i>
+                    <div class="card-body">
+                        <h3>Fastest Travel</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laudantium, aperiam officia corporis tempore debitis!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 3rd column -->
+            <div class="col-md-4 py py-md-0">
+                <div class="card">
+                    <i class="fas fa-hiking"></i>
+                    <div class="card-body">
+                        <h3>Adventures</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laudantium, aperiam officia corporis tempore debitis!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</section>
+
+<!-- section services end -->
+
+<!-- gallery section start -->
+
+<section class="gallary" id="gallary">
+    <div class="container">
+
+        <div class="main-text"style="margin-top:30px">
+            <h1><span>G</span>allary</h1>
+        </div>
+
+        <!--1st row  -->
+        <div class="row"style="margin-top: 30px;">
+            <!-- 1st column -->
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="g1.png" alt=""height="230px">
+                </div>
+            </div>
+            <!-- 2nd column -->
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="g2.png" alt=""height="230px">
+                </div>
+            </div>
+            <!-- 3rd column -->
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="g3.png" alt=""height="230px">
+                </div>
+            </div>
+
+        </div>
+
+        <!--2nd row  -->
+        <div class="row"style="margin-top: 30px;">
+            <!-- 1st column -->
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="g4.png" alt=""height="230px">
+                </div>
+            </div>
+            <!-- 2nd column -->
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="g5.png" alt=""height="230px">
+                </div>
+            </div>
+            <!-- 3rd column -->
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="g6.png" alt=""height="230px">
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</section>
+
+
+<!-- gallery section end  -->
+
+
+
+
+
+<!-- about section start -->
+
+<section class="about" id="about">
+    <div class="container">
+        <div class="main-text"style="margin-top:30px;">
+            <h1>About<span> Us</span></h1>
+        </div>
+
+        <div class="row"style="margin-top:40px">
+                <div class="col-md-6 py3 py-md-0">
+                    <div class="card">
+                        <img src="about-img.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-md-6 py-3 py-md-0">
+                    <h2>How Travel Agency Work</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui tenetur quisquam ex nihil ratione cupiditate minus voluptatem dolores sit voluptas recusandae doloremque magnam quo nostrum, adipisci neque odio ea ipsum, nulla soluta nemo. Vitae tenetur quae cum, omnis nihil maxime quis commodi eius, quaerat ex voluptas, autem sint ullam eligendi.       
+                    </p>
+                    <button id="about-btn">Read More...</button>
+                </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- about section end -->
+
+
+<!-- footer section start -->
+
+<footer id="footer">
+    <h1><span>T</span>ravel</h1>
+        <p>lorem</p>
+        <div class="social-links">
+            <i class="fas fa-twitter"></i>
+            <i class="fas fa-facebook"></i>
+            <i class="fas fa-instagram"></i>
+            <i class="fas fa-youtube"></i>
+            <i class="fas fa-pinterest-p"></i>
+        </div>
+        <div class="credit">
+            <p>Designed By <a href="#">Abhishek Chatuvedi</a></p>
+        </div>
+        <div class="copyright">
+            <p>Copyright@Abhishek. All Rights reserved</p>
+        </div>
+</footer>
+
+
+<!-- footer section end -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+<!--css grid basics  
+    
+    
+    <div class="grid-container">
+    <div class="grid-item item1">1</div>
+    <div class="grid-item item2">2</div>
+    <div class="grid-item item3">3</div>
+    <div class="grid-item item4">4</div>
+    <div class="grid-item item5">5</div>
+    <div class="grid-item item6">6</div>
+    <div class="grid-item item7">7</div>
+    <div class="grid-item item8">8</div>
+    <div class="grid-item item9">9</div>
+</div>
+
+.grid-container{
+    display:grid;
+    gap:5px gap b/w columns
+    grid-template-columns: auto auto auto; for 3 col in a row 
+    bg-color:blue
+    padding:10px
+}
+.grid-item{
+bg-color:yellow
+border:1px solid black
+padding:20px
+font-size:30px
+text-align:center
+}
+
+if we want full width in item1 
+.item1{
+    grid-column: 1 /span 3     span3 is no.of columns 
+}
+
+.item3{
+    grid-column: 2/ span 2   2nd column take 2 span
+}
+1
+23
+456
+789
+
+now taking row together
+
+.item3{
+    grid-column: 2/ span 2   2nd column take 2 span
+    grid-row: 2 /span 2      takes 2 row for 2 rows
+}
+
+1
+2
+    3
+4
+567
+89
+
+.item6{
+    grid-column: 2          `2nd column no.6 is selected
+    grid-row: 4 /span 2      4th row expands for 2 rows
+} -->
+
+
